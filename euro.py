@@ -26,6 +26,6 @@ price_now = df.iloc[-1]["price"]
 avg = df.iloc[-1]["avg_14"]
 
 if pd.notna(avg) and price_now < avg * 0.99:
-    print(f"🚨 COMPRAR EURO: €1 = R${price_now:.2f}")
+    print(f"🚨 ALERTA: Euro barato! €1 = R${price_now:.2f}")
 else:
-    print(f"Sem alerta: €1 = R${price_now:.2f}")
+    print(f"Sem oportunidade. €1 = R${price_now:.2f}")
